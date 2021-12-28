@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'tangerino';
+    src: url('tangerino.woff2') format('woff2'),
+        url('tangerino.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
