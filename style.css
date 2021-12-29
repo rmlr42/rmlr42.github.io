@@ -19,6 +19,9 @@ body {
     
 
 }
+
+/* index */
+
 a{
   cursor: inherit;
 }
@@ -60,10 +63,10 @@ a{
 }
 
 .leaf {
-  width: 4.7vw;
-  height: 4.7vw;
   border-radius: 0 67%;
   background: #34944f;
+  width: 4.7vw;
+  height: 4.7vw;
   position: absolute;
   margin-bottom: 6.5vw;
   margin-left: 3.9vw;
@@ -148,7 +151,6 @@ a{
   position: absolute;
   font-style: italic;
   font-weight: 500;
-  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,11 +178,19 @@ a{
   letter-spacing: .2vw;
 }
 
+#update_box {
+  font-weight: 500;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  overflow: hidden;
+  font-size: .8em;
+}
+
 #architecture:hover {
   background: #ff8b20;
 }
 #prjx:hover {
-  background: #ffd540;
+  background: #7F5DC8;
 }
 
 #info:hover {
@@ -195,20 +205,8 @@ a{
   background: #CA5B5B;
 }
 
-/* #homelogo:hover {
-  background: #ffd540;
-} */
-
 #update:hover {
   background: #8a1717;
-}
-
-#update_box {
-  font-weight: 500;
-  grid-column-start: 2;
-  grid-column-end: 5;
-  overflow: hidden;
-  font-size: 1em;
 }
 
 .roll {
@@ -222,3 +220,68 @@ a{
     transform: translateX(-70vw);
   }
 }
+
+
+/* error */
+
+.error_bg {
+  width: 100vw;
+  height: 100vh;
+  background: #ffd540;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_er{
+ position: absolute;
+  background: #ff8b20;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 38vh;
+}
+
+.nope{
+position: absolute;
+margin-top: 60vh;
+font-family: tangerino;
+font-size: 20vw;
+margin-bottom: 15vh;
+}
+
+.lonely{
+  align-self: flex-end;
+  font-family: roboto mono;
+font-size: .8em;
+margin-bottom: 8vh;
+margin-right: 2vh;
+}
+
+.lf_er{
+  border-radius: 0 67%;
+  background: #34944f;
+  width: 6.3vw;
+  height: 6.3vw;
+  position: absolute;
+  margin-bottom: 6.2vw;
+  margin-left: 6.2vw;
+  transform-origin: top left;
+  transition: ease-in-out 1.2s;
+  z-index: 2;
+}
+
+.ant{
+  width: 3.4vw;
+  position: absolute;
+  margin-bottom: 7vw;
+  margin-left: 7vw;
+}
+.circle_er:hover .lf_er {
+  transform: rotate(-70deg);
+}
+
