@@ -285,3 +285,91 @@ margin-right: 2vh;
   transform: rotate(-70deg);
 }
 
+/* contacts */
+
+.cntc_bg {
+  width: 100vw;
+  height: 100vh;
+  background: #5bbdca;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infocard{
+  border: 2px black solid;
+  background: white;
+  width: 40vw;
+height: 24vw;
+display: flex;
+ align-items: center;
+  justify-content: center;
+  font-family: roboto mono;
+  letter-spacing: 10px;
+  box-shadow: 1vw 1vw;
+}
+
+#email1{
+  margin-right: 6px;
+  font-weight: 800;
+}
+
+/* logo cntacts composition */
+
+.logo_ct{
+  color: black;
+  position: absolute;
+  margin-right: 85vw;
+  margin-bottom: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_ct {
+  position: absolute;
+  background: #ff8b20;
+  width: 8vw;
+  height: 8vw;
+  z-index: 2;
+  border-radius: 100%;
+  margin-bottom: 15.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaf_ct {
+  border-radius: 0 67%;
+  background: #34944f;
+  width: 2.5vw;
+  height: 2.5vw;
+  position: absolute;
+  margin-bottom: 3.4vw;
+  margin-left: 2.3vw;
+  transform-origin: top left;
+  transition: ease-in-out 0.8s;
+}
+
+.circle_ct:hover .leaf_ct {
+  transform: rotate(-15deg);
+}
+
+.circletxt_ct {
+  width: 10vw;
+  object-fit: fill;
+  padding-top: 0.2vw;
+  position: absolute;
+  animation: rotator 180s linear infinite;
+}
+
+
+.logomaintext_ct {
+  position: absolute;
+  padding-top: 11vh;
+  font-family: tangerino;
+  font-weight: 500;
+  font-size: 2.4vw;
+  letter-spacing: 0;
+}
