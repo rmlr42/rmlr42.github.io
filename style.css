@@ -13,17 +13,17 @@
 }
 
 body {
-  cursor: url("assets/cursor.png") 9 9, auto;
+  /* cursor: url("assets/cursor.png") 9 9, auto; */
   overflow: hidden;
-    
-    
-
 }
 
 /* index */
 
-a{
-  cursor: inherit;
+a {
+  text-decoration: none;
+    color: black;
+
+  /* cursor: inherit; */
 }
 .maingrid {
   display: grid;
@@ -36,8 +36,8 @@ a{
 }
 
 .cell {
-  text-decoration: none;
-   color: black;
+  
+  color: black;
   border: 2px black solid;
   font-family: roboto Mono;
   font-weight: bold;
@@ -118,7 +118,6 @@ a{
   grid-column-start: 1;
   grid-column-end: 3;
   background: #ffd540;
- 
 }
 
 #architecture {
@@ -171,11 +170,11 @@ a{
   grid-column-end: 5;
 }
 #update {
-  font-size: .8em;
+  font-size: 0.8em;
   background: none;
   grid-row-start: 5;
   background: #ce2727;
-  letter-spacing: .2vw;
+  letter-spacing: 0.2vw;
 }
 
 #update_box {
@@ -183,14 +182,14 @@ a{
   grid-column-start: 2;
   grid-column-end: 5;
   overflow: hidden;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 #architecture:hover {
   background: #ff8b20;
 }
 #prjx:hover {
-  background: #7F5DC8;
+  background: #7f5dc8;
 }
 
 #info:hover {
@@ -202,7 +201,7 @@ a{
 }
 
 #typeface:hover {
-  background: #CA5B5B;
+  background: #ca5b5b;
 }
 
 #update:hover {
@@ -221,7 +220,6 @@ a{
   }
 }
 
-
 /* error */
 
 .error_bg {
@@ -234,8 +232,8 @@ a{
   justify-content: center;
 }
 
-.circle_er{
- position: absolute;
+.circle_er {
+  position: absolute;
   background: #ff8b20;
   width: 20vw;
   height: 20vw;
@@ -246,23 +244,23 @@ a{
   margin-bottom: 38vh;
 }
 
-.nope{
-position: absolute;
-margin-top: 60vh;
-font-family: tangerino;
-font-size: 20vw;
-margin-bottom: 15vh;
+.nope {
+  position: absolute;
+  margin-top: 60vh;
+  font-family: tangerino;
+  font-size: 20vw;
+  margin-bottom: 15vh;
 }
 
-.lonely{
+.lonely {
   align-self: flex-end;
   font-family: roboto mono;
-font-size: .8em;
-margin-bottom: 8vh;
-margin-right: 2vh;
+  font-size: 0.8em;
+  margin-bottom: 8vh;
+  margin-right: 2vh;
 }
 
-.lf_er{
+.lf_er {
   border-radius: 0 67%;
   background: #34944f;
   width: 6.3vw;
@@ -275,7 +273,7 @@ margin-right: 2vh;
   z-index: 2;
 }
 
-.ant{
+.ant {
   width: 3.4vw;
   position: absolute;
   margin-bottom: 7vw;
@@ -297,27 +295,27 @@ margin-right: 2vh;
   justify-content: center;
 }
 
-.infocard{
+.infocard {
   border: 2px black solid;
   background: white;
   width: 40vw;
-height: 24vw;
-display: flex;
- align-items: center;
+  height: 24vw;
+  display: flex;
+  align-items: center;
   justify-content: center;
   font-family: roboto mono;
   letter-spacing: 10px;
   box-shadow: 1vw 1vw;
 }
 
-#email1{
+#email1 {
   margin-right: 6px;
   font-weight: 800;
 }
 
 /* logo cntacts composition */
 
-.logo_ct{
+.logo_ct {
   color: black;
   position: absolute;
   margin-right: 85vw;
@@ -364,7 +362,6 @@ display: flex;
   animation: rotator 180s linear infinite;
 }
 
-
 .logomaintext_ct {
   position: absolute;
   padding-top: 11vh;
@@ -373,3 +370,88 @@ display: flex;
   font-size: 2.4vw;
   letter-spacing: 0;
 }
+
+/* arch */
+
+.arch_grid {
+  display: grid;
+  grid-template-columns: 15vw 85%;
+  grid-template-rows: 100vh;
+  font-family: roboto Mono;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+.grid1 {
+  background: #34944f;
+  display: grid;
+  grid-template-rows: 15vw 85vh;
+}
+
+.arch_logo {
+  background: #ffd540;
+  border: 2pt black solid;
+}
+
+.arch_index {
+  background: #ffd540;
+  border: 2pt black solid;
+  padding: 1vw;
+  text-align: left;
+}
+
+
+
+.grid2 {
+  background-image: radial-gradient(#c7b299 0.1vw, transparent 0);
+  background-size: 5vw 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2pt black solid;
+}
+
+.viewer {
+  border: 3pt black solid;
+  /* background: red; */
+  /* max-width: 60vw; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 40vw;
+}
+
+#arch_img {
+  height: 40vw;
+  width: 100%;
+  max-width: 80vw;
+}
+
+.action {
+  font-family: roboto Mono;
+  background: white;
+  position: absolute;
+  align-self: flex-end;
+  margin-bottom: 2vh;
+}
+
+button {
+  border: none;
+  font: inherit;
+  background: none;
+  cursor: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #000000;
+  color: white;
+}
+
+#arch_number {
+  margin-right: -10px;
+}
+
+
