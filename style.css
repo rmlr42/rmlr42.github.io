@@ -49,40 +49,23 @@ a {
 }
 
 /* logo composition */
-.circle {
-  position: absolute;
-  background: #ff8b20;
-  width: 15vw;
-  height: 15vw;
-  z-index: 2;
-  border-radius: 100%;
-  margin-bottom: 15.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#logo{
+  margin-bottom: 15vh;
+  width: 19vw;
+  height: 19vw;
 }
 
-.leaf {
-  border-radius: 0 67%;
-  background: #34944f;
-  width: 4.7vw;
-  height: 4.7vw;
-  position: absolute;
-  margin-bottom: 6.5vw;
-  margin-left: 3.9vw;
-  transform-origin: top left;
+#leaf{
+  transform-origin: 50% 21%;
   transition: ease-in-out 0.8s;
 }
 
-.circle:hover .leaf {
-  transform: rotate(-15deg);
+#logo:hover #leaf{
+transform: rotate(-15deg);
 }
 
-.circletxt {
-  width: 19vw;
-  object-fit: fill;
-  padding-top: 0.3vw;
-  position: absolute;
+#texty{
+  transform-origin: center;
   animation: rotator 180s linear infinite;
 }
 
@@ -98,19 +81,13 @@ a {
 .logomaintext {
   position: absolute;
   align-self: flex-end;
-  padding-bottom: 20.5vh;
+  padding-bottom: 20vh;
   font-family: tangerino;
   font-weight: 500;
   font-size: 6vw;
   letter-spacing: 0;
 }
 
-.logo {
-  width: 30vw;
-  position: absolute;
-  z-index: -1;
-  background-color: rgba(165, 42, 42, 0);
-}
 
 #homelogo {
   grid-row-start: 1;
@@ -325,51 +302,31 @@ a {
   justify-content: center;
 }
 
-.circle_ct {
-  position: absolute;
-  background: #ff8b20;
-  width: 8vw;
-  height: 8vw;
-  z-index: 2;
-  border-radius: 100%;
-  margin-bottom: 15.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#cnt_logo{
+  width: 12vw;
+  height: 12vw;
+  margin-bottom: 10.6vh;
+  margin-left: -0.3vh;
+}
+#txt_logo{
+  width: 12vw;
+  height: 12vw;
 }
 
-.leaf_ct {
-  border-radius: 0 67%;
-  background: #34944f;
-  width: 2.5vw;
-  height: 2.5vw;
-  position: absolute;
-  margin-bottom: 3.4vw;
-  margin-left: 2.3vw;
-  transform-origin: top left;
-  transition: ease-in-out 0.8s;
-}
-
-.circle_ct:hover .leaf_ct {
-  transform: rotate(-15deg);
-}
-
-.circletxt_ct {
-  width: 10vw;
-  object-fit: fill;
-  padding-top: 0.2vw;
-  position: absolute;
+#txt_texty{
+  transform-origin: 50% 39.3%;
   animation: rotator 180s linear infinite;
 }
 
-.logomaintext_ct {
-  position: absolute;
-  padding-top: 11vh;
-  font-family: tangerino;
-  font-weight: 500;
-  font-size: 2.4vw;
-  letter-spacing: 0;
+#txt_leaf{
+  transform-origin: 50% 19%;
+  transition: ease-in-out 0.8s;
 }
+
+#txt_logo:hover #txt_leaf{
+transform: rotate(-15deg);
+}
+
 
 /* arch */
 
@@ -391,6 +348,9 @@ a {
 .arch_logo {
   background: #ffd540;
   border: 2pt black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arch_index {
