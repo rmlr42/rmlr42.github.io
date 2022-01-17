@@ -308,6 +308,11 @@ transform: rotate(-15deg);
   margin-bottom: 10.6vh;
   margin-left: -0.3vh;
 }
+
+#cnt_logo:hover #txt_leaf{
+transform: rotate(-15deg);
+}
+
 #txt_logo{
   width: 12vw;
   height: 12vw;
