@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-    color: black;
+  color: black;
 
   /* cursor: inherit; */
 }
@@ -36,7 +36,6 @@ a {
 }
 
 .cell {
-  
   color: black;
   border: 2px black solid;
   font-family: roboto Mono;
@@ -49,22 +48,22 @@ a {
 }
 
 /* logo composition */
-#logo{
+#logo {
   margin-bottom: 15vh;
   width: 19vw;
   height: 19vw;
 }
 
-#leaf{
+#leaf {
   transform-origin: 50% 21%;
   transition: ease-in-out 0.8s;
 }
 
-#logo:hover #leaf{
-transform: rotate(-15deg);
+#logo:hover #leaf {
+  transform: rotate(-15deg);
 }
 
-#texty{
+#texty {
   transform-origin: center;
   animation: rotator 180s linear infinite;
 }
@@ -87,7 +86,6 @@ transform: rotate(-15deg);
   font-size: 6vw;
   letter-spacing: 0;
 }
-
 
 #homelogo {
   grid-row-start: 1;
@@ -262,27 +260,60 @@ transform: rotate(-15deg);
 
 /* contacts */
 
-.cntc_bg {
-  width: 100vw;
-  height: 100vh;
-  background: #5bbdca;
-  border: 2px black solid;
+.cnt_grid {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 15vw 85%;
+  grid-template-rows: 100vh;
+  font-family: roboto Mono;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+.home {
+  display: grid;
+  grid-template-rows: 15vw 85vh;
+}
+
+.cnt_logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.arch_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnt_bg {
+  background: #5bbdca;
+  border: 2pt black solid;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100vw;
+  height: 100vh;
+}
+
 .infocard {
+  margin: auto;
   border: 2px black solid;
   background: white;
-  width: 40vw;
-  height: 24vw;
+  width: 40em;
+  height: 24em;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: roboto mono;
   letter-spacing: 10px;
   box-shadow: 1vw 1vw;
+}
+
+.arch_logo_cnt {
+  position: absolute;
 }
 
 #email1 {
@@ -302,36 +333,24 @@ transform: rotate(-15deg);
   justify-content: center;
 }
 
-#cnt_logo{
-  width: 12vw;
-  height: 12vw;
-  margin-bottom: 10.6vh;
-  margin-left: -0.3vh;
-}
-
-#cnt_logo:hover #txt_leaf{
-transform: rotate(-15deg);
-}
-
-#txt_logo{
+#txt_logo {
   width: 12vw;
   height: 12vw;
 }
 
-#txt_texty{
+#txt_texty {
   transform-origin: 50% 39.3%;
   animation: rotator 180s linear infinite;
 }
 
-#txt_leaf{
+#txt_leaf {
   transform-origin: 50% 19%;
   transition: ease-in-out 0.8s;
 }
 
-#txt_logo:hover #txt_leaf{
-transform: rotate(-15deg);
+#txt_logo:hover #txt_leaf {
+  transform: rotate(-15deg);
 }
-
 
 /* arch */
 
@@ -345,12 +364,12 @@ transform: rotate(-15deg);
 }
 
 .grid1 {
-  background: #34944f;
   display: grid;
-  grid-template-rows: 15vw 85vh;
+  grid-template-rows: 15vw;
 }
 
 .arch_logo {
+  z-index: 2;
   background: #ffd540;
   border: 2pt black solid;
   display: flex;
@@ -359,13 +378,12 @@ transform: rotate(-15deg);
 }
 
 .arch_index {
+  z-index: 2;
   background: #ffd540;
   border: 2pt black solid;
   padding: 1vw;
   text-align: left;
 }
-
-
 
 .grid2 {
   background-image: radial-gradient(#c7b299 0.1vw, transparent 0);
@@ -390,7 +408,7 @@ transform: rotate(-15deg);
 
 #arch_img {
   height: 40vw;
-  width: 100%;
+  width: auto;
   max-width: 80vw;
 }
 
@@ -419,4 +437,129 @@ button:hover {
   margin-right: -10px;
 }
 
+/* type */
 
+.type_grid {
+  display: grid;
+  grid-template-columns: 15vw 85%;
+  grid-template-rows: 100vh;
+  font-family: roboto Mono;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+.t_bg {
+  background-color: #ca5b5b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2pt black solid;
+}
+
+.type_side_grid {
+  display: grid;
+  grid-template-rows: 15vw;
+}
+
+.t_side {
+  display: flex;
+  background: #ffd540;
+  border: 2pt black solid;
+  border-bottom: 0;
+  min-height: 200%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 2em;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  background: #7f5dc8;
+  border: 2pt black solid;
+  border-top: 3pt black solid;
+  align-self: flex-end;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 5vh;
+  border: 2.5pt black solid;
+  background: #5bbdca;
+  align-self: flex-start;
+  margin-top: -2px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.dl_grid {
+  position: absolute;
+  display: grid;
+  border: .5pt black solid;
+  box-shadow: 0.4vw 0.6vw;
+  background: white;
+  width: 20vw;
+  height: 65vh;
+  grid-template-rows: 20vw 6vh;
+  /* grid-template-columns: 20vw; */
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-collapse: collapse;
+}
+
+.dl_view {
+  display: flex;
+  border: 2.5pt black solid;
+  height: 100%;
+  max-width: 20vw;
+  align-items: center;
+  justify-content: center;
+  margin: -1px;
+}
+
+.dl_license {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5pt black solid;
+  margin-top: 4px;
+  background: #5bbdca;
+  transition: 0.2s ease;
+   margin: -1px;
+}
+
+.dl_bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5pt black solid;
+  border-top: 2pt black solid;
+  background: #ff8b20;
+  transition: 0.2s ease;
+   margin: -1px;
+}
+.dl_license:hover {
+
+  margin: -8px;
+  z-index: 3;
+  border: 3pt black solid;
+}
+
+.dl_bt:hover {
+  margin: -8px;
+  border: 3pt black solid;
+}
+
+#geo{
+  /* background: white; */
+}

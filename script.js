@@ -63,3 +63,8 @@ document.addEventListener('keydown', e => {
     document.getElementById("arch_img").src = images[i];
     document.getElementById("arch_number").innerHTML = i + 1;
   }})
+
+
+
+
+  // showit
